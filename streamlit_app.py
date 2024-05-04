@@ -22,15 +22,15 @@ def clean_text(text):
 def get_sentiment(comment):
     """Perform sentiment analysis using LangChain."""
     cleaned_comment = clean_text(comment)
-    # Ensure that the string is properly formatted without unwanted line breaks.
-    prompt = f"Analyze the sentiment of the following comment and classify it as Positive, Neutral, or Negative with a detailed explanation: \"{
-        cleaned_comment}\""
+    prompt = f"""Analyze the sentiment of the following comment and classify it as Positive, Neutral,
+                or Negative with a detailed explanation: "{cleaned_comment}"""
     try:
         response = llm.generate([prompt], max_tokens=150)
         sentiment_result = response.generations[0][0].text.strip()
         return sentiment_result
     except Exception as e:
         return f"Error occurred: {str(e)}"
+
 
 
 def main():
