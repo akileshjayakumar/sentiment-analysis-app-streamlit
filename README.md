@@ -1,6 +1,6 @@
-# [Sentiment Analysis App](https://sentiment-analysis.streamlit.app/)
+# [Sentiment Analysis App](https://sentiment-analysis-web-app.streamlit.app/)
 
-Here is the link to the live site: []()
+Here is the link to the live site: [https://sentiment-analysis-web-app.streamlit.app/](https://sentiment-analysis-web-app.streamlit.app/)
 
 ## Key Features
 
